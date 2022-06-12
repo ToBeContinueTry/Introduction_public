@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./testout.css">
-        <link rel="stylesheet" type="text/css" href="./footer.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./testout.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            function header(){
+                $.ajax({
+                    url: "https://intromyfriend.web.app/header.html",
+                    cache: false,
+                    success: function(html){
+                        document.write(html);
+                    }
+                });
+            }
+        </script>
         <title>Quogrty</title>
     </head>
+    <!-- Body -->
     <body>
-        <!-- メニューバー -->
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="./SubPage/ActServiceList.html">対応サービス紹介</a></li>
-                <li><a href="./SubPage/newinfo.html">最新情報</a></li>
-                <li><a href="./SubPage/Blog.html">ブログ</a></li>
-                <li><a href="./SubPage/QuestionPage.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-
+        開発中        
         <!-- 紹介用トップ画面 -->
         <h1>Quogrty</h1>
         <!-- 画像表示 -->
-        <img src="./img/QuogrtyImage.jpg" alt="写真" width="384" height="260">        
-    </body>
-
-
-
+        <img src="./img/QuogrtyImage.jpg" alt="写真" width="384" height="260">     
+    </body> 
+    
+    <!--  フッター -->
+    <link rel="stylesheet" type="text/css" href="./footer.css">
     <footer id="footer01" class="footer outer-block">
         <div class="logo">
           <a href="https://b-risk.jp/">
