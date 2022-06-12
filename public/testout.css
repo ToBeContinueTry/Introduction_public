@@ -30,7 +30,7 @@ nav {
     display: flex;
   }
   li {
-    list-style: none;
+    list-style:inside;
   }
   a {
     display: block;
